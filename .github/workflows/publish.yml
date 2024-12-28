@@ -30,6 +30,11 @@ jobs:
         #with:
           #static_site_generator: next
 
+      - name: Upload artifact 📡
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
   deploy:
     environment:
       name: github-pages
